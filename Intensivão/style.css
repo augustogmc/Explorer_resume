@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#cape {
+    height: 100vh;
+    background: #F9F4FB;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 3.2rem 0;
+    text-align: center;
+}
+
+.astronaut {
+    width: min(36rem, 90%);
+    aspect-ratio: 1/1;
+
+    margin: 0 auto 1.7rem;
+}
+
+#cape h1 {
+    color: #B52184;
+
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+
+    margin-bottom: 0.5rem;
+}
+
+#cape p {
+    color: #312D64;
+
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+
+    margin-bottom: 15%;
+}
+
+#cape .arrow {
+    width: min(6rem, 90%);
+}
+
+#cards {
+    height: min-content;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    padding: 5rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5rem;
+}
+
+#cards .card {
+    padding: 2.5rem;
+    width: min(35rem, 95%);
+
+    border-radius: 2rem;
+    background: #FFF;
+    box-shadow: 0 .3rem 1.3rem 0 rgba(0, 0, 0, 0.25);
+
+    margin: auto;
+
+}
+
+.moon {
+    margin-bottom: 2.5rem;
+}
+
+.card h2 {
+    color: #B52184;
+    font-size: 3rem;
+    font-weight: 900;
+
+    margin-bottom: 2rem;
+}
+
+#contact {
+    height: min-content;
+
+    background: #F9F4FB;
+    padding-top: 7.8rem;
+}
+
+fieldset {
+    border: none;
+    margin: 0 4rem 2.4rem;
+}
+
+legend {
+    color: #B52184;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+
+    margin-bottom: 4.3rem;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.input-wrapper {
+    height: 4.8rem;
+}
+
+.input-wrapper label .ion-icon{
+    position: relative;
+    top: 4rem;
+    left: 1.4rem;
+    z-index: 0;
+
+    width: 2.4rem;
+
+    aspect-ratio: 1;
+}
+
+.input-wrapper input, .menssage-wrapper input {
+    
+    border-radius: 1.6rem;
+    border: 0.15rem solid #312D64;
+
+    color: #312D64;
+    font-family: 'Mulish', sans-serif;
+
+    
+    background: #F9F4FB;
+
+    
+    font-size: 1.6rem;
+    font-weight: 600;
+    
+    width: 100%;
+
+
+}
+
+.input-wrapper input {
+    padding-left: 5rem;
+    height: 4.8rem;
+}
+
+.menssage-wrapper input {
+    padding-left: 1.6rem;
+    padding-bottom: 8.5rem;
+    height: 12.6rem;
+
+    margin-top: 2.8rem;
+}
+
+button {
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    
+    color: #FFF;
+
+    width: max-content;
+
+    margin: 2.4rem auto 6.5rem 4.3rem;
+
+    height: 4.6rem;
+    padding: 1.6rem;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+.bg {
+    display: none;
+}
+
+footer {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+
+    text-align: center;
+    padding: 3.6rem 0;
+    color: #FFF;
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+@media (min-width: 1210px) {
+
+ #cape {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding: 0 3rem 10rem 10.1rem ;
+ }
+
+ .title {
+    width: 56rem;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+ }
+
+ #cape h1 {
+    margin-top: 28rem;
+    font-size: 5.5rem;
+ }
+
+ #cape p {
+    font-size: 3rem;
+    
+ }
+
+ .astronaut {
+    width: min(72rem, 80%);
+    height: min(72rem, 80%);
+    
+ }
+
+
+ #cape .arrow {
+    aspect-ratio: 0.5;
+    margin: 3rem 0 0;
+ }
+
+ #cards {
+    padding: 5rem  auto;
+    display: grid;
+    grid-template-columns: repeat(3, 36rem);
+ }
+
+ #cards .card {
+    height: 37rem;
+ }
+
+#contact {
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 9rem;
+}
+
+#contact form {
+    width: min(100rem, 90%);
+    padding-left: 5rem;
+}
+
+form fieldset legend {
+    font-size: 4.2rem;
+    padding-top: 5rem;
+}
+
+.bg {
+    display: inline;
+    width: min-content;
+    align-items: end;
+}
+
+.bg img {
+    z-index: 1;
+    height: 60rem;
+    position: relative;
+    bottom: 0rem;
+}
+}
+
